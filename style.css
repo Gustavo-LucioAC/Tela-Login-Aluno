@@ -1,0 +1,88 @@
+body {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;                /* Ativa o Flexbox */
+    justify-content: center;      /* Centraliza horizontalmente */
+    align-items: center;          /* Centraliza verticalmente */
+    height: 100vh;                /* Define a altura do body como 100% da viewport */
+    margin: 0;                    /* Remove margens padrão */
+    background-color: #ffffff;    /* Cor de fundo da página (opcional) */
+}
+#login {
+    background-color: white; /* Define a cor de fundo como branco */
+    padding: 10px;            /* Adiciona algum espaço interno */
+    border-radius: 5px;       /* Adiciona bordas arredondadas (opcional) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil (opcional) */
+}
+textarea {
+    width: 96%;                       /* Ocupar toda a largura disponível */
+    padding: 10px;                     /* Espaçamento interno */
+    border-radius: 15px;               /* Bordas arredondadas */
+    border: 1px solid #ccc;            /* Cor da borda cinza */
+    background-color: #fafafa;         /* Fundo claro */
+    font-size: 16px;                   /* Tamanho da fonte */
+    resize: none;                      /* Impede o redimensionamento */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna */
+    transition: all 0.3s ease-in-out;  /* Transição suave ao focar */
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="data"],
+textarea {
+    width: 96%;                  /* Ocupar toda a largura disponível */
+    padding: 5px;                 /* Reduz o espaçamento interno dos campos */
+    margin: 8px 0;                /* Reduz a margem entre os campos */
+    border-radius: 5px;           /* Bordas levemente arredondadas */
+    border: 1px solid #ccc;       /* Cor da borda */
+    background-color: #f9f9f9;    /* Fundo claro */
+    font-size: 14px;              /* Tamanho de fonte menor */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra interna menor */
+    transition: all 0.3s ease-in-out;  /* Transição suave ao focar */
+    height: 35px;                 /* Altura reduzida dos inputs */
+}
+/* Efeito ao focar no campo */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+input[type="data"]:focus,
+textarea:focus {
+    outline: none;                      /* Remove o contorno padrão */
+    border-color: #007bff;              /* Borda azul ao focar */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Sombra ao focar */
+    background-color: #fff;             /* Fundo branco ao focar */
+}
+
+/* Estilo dos botões */
+input[type="submit"],
+input[type="button"] {
+    width: 48%;                         /* Divide igualmente os botões */
+    padding: 5px;                       /* Reduz o padding dos botões */
+    margin-top: 8px;                    /* Margem reduzida */
+    background-color: #007bff;          /* Cor de fundo azul */
+    color: white;                       /* Cor do texto branca */
+    border: none;                       /* Remove borda */
+    border-radius: 5px;                 /* Bordas arredondadas */
+    font-size: 14px;                    /* Tamanho da fonte reduzido */
+    cursor: pointer;
+    transition: background-color 0.3s ease;  /* Transição suave */
+}
+
+/* Efeito hover nos botões */
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #0056b3;          /* Cor azul escura ao passar o mouse */
+}
+
+/* Responsividade para o botão de cancelar */
+input[type="button"] {
+    background-color: #6c757d;          /* Cor cinza */
+}
+
+input[type="button"]:hover {
+    background-color: #5a6268;          /* Cor cinza escura ao passar o mouse */
+}
